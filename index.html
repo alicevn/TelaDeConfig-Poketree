@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuração de Perfil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-container">
+        <!-- Imagem de banner -->
+        <img class="banner" src="images/fundoVerde.png" alt="Banner"> <!--Banner do perfil -->
+        <div class="header">
+            <div class="profile-info">
+                <div class="profile-picture">
+                    <img src="images/icon.png" alt="Foto de Perfil"> <!-- Foto de perfil-->
+                    <button class="edit-photo">📷</button> <!--botao para inserir ou trocar foto-->
+                </div>
+                <div class="details">
+                    <h2>João da Silva</h2> <!--Nome que ficará público após ser editado-->
+                    <p><strong>Nível:</strong> <strong>02</strong></p> <!--Nível que tambem ficará público-->
+                    <p><strong>Parâmetro:</strong> 
+                        <img src="images/imgCheia.png" alt="Planta" style="width: 20px; height: 20px;">  <!--Imagens do plantomêtro-->
+                        <img src="images/imgCheia.png" alt="Planta" style="width: 20px; height: 20px;">
+                        <img src="images/imgVazia.png" alt="Planta" style="width: 20px; height: 20px;">
+                        <img src="images/imgVazia.png" alt="Planta" style="width: 20px; height: 20px;">
+                        <img src="images/imgVazia.png" alt="Planta" style="width: 20px; height: 20px;">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <form id="profile-form">
+            <input type="text" name="first-name" placeholder="Primeiro Nome" value=""> <!--Formulario de preenchimento -->
+            <input type="text" name="last-name" placeholder="Sobrenome" value="">
+            <input type="email" name="email" placeholder="E-mail" value="">
+            <input type="tel" name="phone" placeholder="Número de Telefone" value="">
+            <input type="text" name="postal-code" placeholder="CEP" value="">
+            <input type="Senha" name="password" placeholder="Senha" value="">
+        </form>
+    </div>
+
+    <!-- Botões de ação movidos para fora da caixa -->
+    <div class="action-buttons-bottom">
+        <button id="cancel-button" class="cancel-button">✖</button> <!--Botoes de cancelar e salvar-->
+        <button id="save-button" class="save-button">✔</button>
+    </div>
+
+    <script src="script.js"></script> <!--Acessar o arquivo.js-->
+</body>
+</html>
+
